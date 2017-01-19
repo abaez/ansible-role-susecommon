@@ -1,0 +1,26 @@
+---
+
+- name: "Install bulk of things"
+  zypper_repository:
+    repo="{{ item }}"
+    priority=100
+    auto_import_keys=true
+    state=present
+  with_item:
+    - "http://download.virtualbox.org/virtualbox/rpm/opensuse/{{ suse.version }}/virtualbox.repo"
+    - "http://download.opensuse.org/repositories/X11:Utilities/openSUSE_Leap_{{ suse.version }}/X11:Utilities.repo"
+    - "http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_{{ suse.version }}/M17N:fonts.repo"
+    - "http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_{{ suse.version }}/mozilla.repo"
+    - "http://download.opensuse.org/repositories/X11:/Enlightenment:/Factory/openSUSE_Leap_{{ suse.version }}/X11:Enlightenment:Factory.repo"
+    - "http://download.opensuse.org/repositories/devel:languages:lua/openSUSE_Leap_{{ suse.version }}/devel:languages:lua.repo"
+    - "http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_{{ suse.version }}/devel:languages:go.repo"
+    - "http://download.opensuse.org/repositories/network/openSUSE_Leap_{{ suse.version }}/network.repo"
+    - "http://download.opensuse.org/repositories/Virtualization:containers/openSUSE_Leap_{{ suse.version }}/Virtualization:containers.repo"
+
+- name: "Install bulk of things"
+  zypper_repository:
+    name=packman
+    repo="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_{{ suse.version }}/"
+    priority=100
+    auto_import_keys=true
+    state=present

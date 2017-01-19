@@ -1,2 +1,5 @@
 ---
 # defaults file for template
+
+suse:
+  version: "{{ ansible_distribution_version }}"
