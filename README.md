@@ -3,32 +3,27 @@ Role Name
 [![license][2i]][2p]
 [![twitter][3i]][3p]
 
-A brief description of the role goes here.
+An OpenSUSE common self provision.
 
 Description
 -----------
 
-Give a description
-
-Role Variables
---------------
-
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+The provision is to install the base similar packages installed on most self provisioned machines. It's more tailored focus to the author's needs, but may help others for their own versioning.
 
 Requirements
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+Currently only works on openSUSE Leap and Tumbleweed. Eventually should foster to holding commons for SLE when disabling GUI applications is added.
 
 Usage
 -----
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Besides the requirements given above, you only need to append to your *playbook* the following:
 
 ``` yaml
 - hosts: servers
     roles:
-        - { role: username.rolename, x: 42 }
+        - abaez.susecommon
 ```
 
 Author Information
