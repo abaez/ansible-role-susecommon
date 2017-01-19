@@ -1,0 +1,17 @@
+---
+
+- name: install the common packages
+  zypper:
+    name={{ item }}
+  with_items:
+    - mosh
+    - syncthing
+    - redshift
+    - termite
+    - VirtualBox-5.1
+    - lua
+    - luarocks
+    - firefox
+    - enlightenment
+    - golang
+    - google-merriweather-fonts
