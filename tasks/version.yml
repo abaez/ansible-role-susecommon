@@ -1,0 +1,15 @@
+---
+
+- name: Crash on other OS other than Suse based
+  fail: msg="Not a Suse based Distro."
+  when: ansible_os_family != "Suse"
+
+- name: Repositories for Leap
+  include: "repos.yml"
+  when: ansible_distribution == "openSUSE Leap"
+
+- name: Repositories for Tumbleweed
+  include: "repos.yml"
+  vars:
+    suse["version"]: Factory
+  when: ansible_distribution == "openSUSE Tumbleweed"
