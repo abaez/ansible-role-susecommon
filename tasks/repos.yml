@@ -6,7 +6,7 @@
     priority=100
     auto_import_keys=true
     state=present
-  with_item:
+  with_items:
     - "http://download.virtualbox.org/virtualbox/rpm/opensuse/{{ suse.version }}/virtualbox.repo"
     - "http://download.opensuse.org/repositories/X11:Utilities/openSUSE_Leap_{{ suse.version }}/X11:Utilities.repo"
     - "http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_{{ suse.version }}/M17N:fonts.repo"
