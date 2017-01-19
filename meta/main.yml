@@ -25,9 +25,7 @@ galaxy_info:
   platforms:
   - name: opensuse
     versions:
-    - 42.1
-    - 42.2
-    - Tumbleweed
+    - all
   #- name: SLES
   #  versions:
   #  - 12
