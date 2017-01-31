@@ -11,5 +11,6 @@
 - name: Repositories for Tumbleweed
   include: "repos.yml"
   vars:
-    suse["version"]: Factory
+    suse:
+      version: Factory
   when: ansible_distribution == "openSUSE Tumbleweed"
