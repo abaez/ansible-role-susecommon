@@ -13,5 +13,5 @@
     - luarocks
     - firefox
     - enlightenment
-    - golang
+    - go
     - google-merriweather-fonts
