@@ -7,6 +7,7 @@
     auto_import_keys=true
     state=present
   with_items:
+    - "http://download.opensuse.org/repositories/devel:tools:scm/openSUSE_Leap_{{ suse.version }}/devel:tools:scm.repo"
     - "http://download.opensuse.org/repositories/X11:Utilities/openSUSE_Leap_{{ suse.version }}/X11:Utilities.repo"
     - "http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_{{ suse.version }}/M17N:fonts.repo"
     - "http://download.opensuse.org/repositories/mozilla/openSUSE_Leap_{{ suse.version }}/mozilla.repo"
