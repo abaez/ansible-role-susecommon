@@ -7,8 +7,6 @@
     - mosh
     - syncthing
     - redshift
-    - termite
-    - VirtualBox-5.1
     - lua
     - luarocks
     - firefox
