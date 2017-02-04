@@ -16,6 +16,7 @@
     - "http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_{{ suse.version }}/devel:languages:go.repo"
     - "http://download.opensuse.org/repositories/network/openSUSE_Leap_{{ suse.version }}/network.repo"
     - "http://download.opensuse.org/repositories/Virtualization:containers/openSUSE_Leap_{{ suse.version }}/Virtualization:containers.repo"
+    - "http://download.opensuse.org/repositories/devel:tools:building/openSUSE_Leap_{{ suse.version }}/devel:tools:building.repo"
 
 - name: "Install bulk of things"
   zypper_repository:

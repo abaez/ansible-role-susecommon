@@ -8,6 +8,7 @@
     - syncthing
     - redshift
     - lua
+    - tup
     - luarocks
     - firefox
     - enlightenment
