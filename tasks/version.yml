@@ -5,13 +5,13 @@
   when: ansible_os_family != "Suse"
 
 - name: Repositories for Leap
-  include: "repos.yml"
+  include_tasks: "repos.yml"
   vars:
     suse_repo_factory: "{{ suse_repo_default }}"
   when: ansible_distribution == "openSUSE Leap"
 
 - name: Repositories for Tumbleweed
-  include: "repos.yml"
+  include_tasks: "repos.yml"
   vars:
     suse_repo_factory: openSUSE_Factory
   when: ansible_distribution == "openSUSE Tumbleweed"
