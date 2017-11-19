@@ -1,5 +1,4 @@
 ---
 # defaults file for template
 
-suse:
-  version: "{{ ansible_distribution_version }}"
+suse_repo_default: openSUSE_Tumbleweed
