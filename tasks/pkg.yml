@@ -2,7 +2,7 @@
 
 - name: install the common packages
   zypper:
-    name={{ item }}
+    name: {{ item }}
   with_items:
     - mosh
     - syncthing
